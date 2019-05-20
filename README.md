@@ -30,32 +30,32 @@ these settings in `<Pancake />`!
 
 ## Shop needs an opening time
 
-First, you want to record the time your shop was opened. Open `<Game />` and
+<!-- First, you want to record the time your shop was opened. Open `<Game />` and
 notice a `setCurrentTime()` method already exits, but it is not yet called.
 Create a `componentDidMount()` method in `<Game />` which will call the
 `setCurrentTime()` when the component is first created. If you've done that
-correctly, you should see the current time at the top of the page.
+correctly, you should see the current time at the top of the page. -->
 
 ## Pancake needs a timer!
 
-Now it's time to implement the actual pancake cooking part of the game. Firstly,
+<!-- Now it's time to implement the actual pancake cooking part of the game. Firstly,
 we need a timer on each pancake so we could record how long it's been cooking.
 Look in `<Pancake />` - the `startInterval()` method is already there. All you
 need to do is add a lifecycle method in `<Pancake />` at `componentDidMount()`
 (that's the point at which the pancake component gets added to the page) which
-will start the counter.
+will start the counter. -->
 
 
 ## Tidy up the timer
 
-Now that we've set up a timer, we need to make sure we also remove it as soon as
+<!-- Now that we've set up a timer, we need to make sure we also remove it as soon as
 it's not needed anymore. It is important to always clean up such long-running
 processes as soon as they are no longer needed. You wouldn't leave your dirty
-dishes on the table after you've finished eating - similarly you shouldn't be
+dishes on the table after you've finished eating (yes I would) - similarly you shouldn't be
 leaving your intervals ticking after the component using them has been
 dismounted. As you can see, a `cleanUpInterval()` function is all set up for
 you, so all you have left to do it call it just before the component gets
-unmounted from the page. That will be in the `componentWillUnmount()` method.
+unmounted from the page. That will be in the `componentWillUnmount()` method. -->
 
 That's it! You've finished off the game! Happy pancake-making!
 
